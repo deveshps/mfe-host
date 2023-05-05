@@ -1,0 +1,7 @@
+{
+  "remote1": {
+    "scope": "remote1",
+    "entryUrl": "http://localhost:3001/remoteEntry.js",
+    "serverEntryUrl": "http://localhost:3001/server/remoteEntry.js"
+  }
+}
