@@ -12,6 +12,7 @@
     "node:start": "node dist/server/server.js",
     "start": "npm run build && pm2-runtime dist/server/server.js",
     "deploy": "NODE_ENV=production npm run pm2:app",
+    "reload": "npm run pm2:stop && npm run pm2:start",
     "pm2:app": "npm run build && npm run pm2:stop && npm run pm2:start",
     "pm2:start": "pm2 --name mfe-host --time start npm -- run node:start",
     "pm2:stop": "pm2 delete mfe-host || true",
