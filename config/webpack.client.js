@@ -69,7 +69,7 @@ const plugins = [
   // }),
 ];
 
-if (!devServer) {
+if (!devServer && process.env.NODE_ENV !== 'production') {
   plugins.push(new WebpackRemoteTypesPlugin({
     remotes: remotesBase,
     outputDir: 'node_modules/@types_mfe',

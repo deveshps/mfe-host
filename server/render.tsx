@@ -7,13 +7,14 @@ import { fetchInitialData } from '../src/ssr/initial-data';
 import { StaticProvider } from '../src/ssr/static-context';
 import { extractStyleSheetData } from "../src/ssr/ssr-utils";
 import { InitialData } from '../src/model/response.model';
-import assetsMap from '../src/utils/assets-map';
+import { assetsMap, assetsMapOnServer } from '../src/utils/assets-map';
 
 export async function sendResponse(req: Request, res: Response) {
   res.socket?.on('error', (error) => console.error('Fatal:', error));
 
   const p1 = fetchInitialData(req, res);
-  const p2 = extractStyleSheetData(assetsMap);
+  const p2 = extractStyleSheetData(assetsMap, assetsMapOnServer);
+
   const [initialDataValue, styleSheetData] = await Promise.all([p1, p2]);
 
   const initialData: InitialData = { ...initialDataValue }; // initialData might change during serverRender
