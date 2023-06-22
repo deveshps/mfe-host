@@ -1,4 +1,4 @@
-const mfManifest = require('./mf.manifest.json');
+const mfManifest = require('./mf.manifest.js');
 
 function getRemotesBase(remotes) {
   const sources = Object.entries(remotes).map(([key, value]) => {

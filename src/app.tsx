@@ -6,10 +6,10 @@ import Home from './components/Home';
 import NotFound from './components/NotFound';
 import { InitialData } from "./model/response.model";
 // import { dynamicModule } from "./utils/dynamic-module";
-// import { remote1 } from '../config/mf.manifest.json';
+// import mfManifest from '../config/mf.manifest.js';
 
 const App1 = lazy(() => import('remote1/App' /* webpackPrefetch: true */));
-// const App1 = dynamicModule('./App', remote1);
+// const App1 = dynamicModule('./App', mfManifest.remote1);
 const App2 = lazy(() => import('remote2/App' /* webpackPrefetch: true */));
 
 function wrapSuspense(element: React.ReactElement) {
