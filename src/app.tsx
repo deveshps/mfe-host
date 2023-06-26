@@ -10,6 +10,7 @@ import { InitialData } from "./model/response.model";
 
 const App1 = lazy(() => import('remote1/App' /* webpackPrefetch: true */));
 // const App1 = dynamicModule('./App', mfManifest.remote1);
+const App2 = lazy(() => import('remote2/App' /* webpackPrefetch: true */));
 
 function wrapSuspense(element: React.ReactElement) {
   return (
@@ -44,6 +45,7 @@ function App({ initialData }: AppProps) {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/remote1/*" element={wrapSuspense(<App1 pageData={pageData} />)} />
+        <Route path="/remote2/*" element={wrapSuspense(<App2 pageData={pageData} />)} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ErrorBoundary>

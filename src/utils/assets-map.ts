@@ -1,6 +1,7 @@
 import assetsMapJson from '../../dist/webpack.manifest.json';
 import mfManifest from '../../config/mf.manifest';
 import remote1AssetsMap from 'remote1/assetsMap';
+import remote2AssetsMap from 'remote2/assetsMap';
 
 function getAssetMapOnServer(remoteAssetsMap: any, remoteName: string) {
   const { localOrigin, locallyHosted } = (mfManifest as any)[remoteName];
@@ -20,9 +21,11 @@ function getAssetMapOnServer(remoteAssetsMap: any, remoteName: string) {
 export const assetsMap = {
   ...assetsMapJson,
   ...remote1AssetsMap,
+  ...remote2AssetsMap,
 };
 
 export const assetsMapOnServer = {
   ...assetsMapJson,
   ...getAssetMapOnServer(remote1AssetsMap, 'remote1'),
+  ...getAssetMapOnServer(remote2AssetsMap, 'remote2'),
 };

@@ -6,5 +6,13 @@
     "localOrigin": "http://localhost:3001",
     "remoteOrigin": "http://3.6.24.181:3001",
     "locallyHosted": true
+  },
+  "remote2": {
+    "scope": "remote2",
+    "entryUrl": "/remoteEntry.js",
+    "serverEntryUrl": "/server/remoteEntry.js",
+    "localOrigin": "http://localhost:3002",
+    "remoteOrigin": "http://3.6.24.181:3002",
+    "locallyHosted": true
   }
 }
