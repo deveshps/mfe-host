@@ -1,6 +1,6 @@
 require('./configure');
 const path = require("path");
-const nodeExternals = require('webpack-node-externals');
+// const nodeExternals = require('webpack-node-externals');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { EnvironmentPlugin } = require('webpack');
 const { UniversalFederationPlugin } = require("@module-federation/node");

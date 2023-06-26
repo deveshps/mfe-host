@@ -8,16 +8,13 @@ function Header() {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/remote1">Remote App 1</Link>
+        <Link to="/remote1">Remote App</Link>
       </li>
       <li>
         <Link to="/remote1/2">User 2</Link>
       </li>
       <li>
         <Link to="/remote1/3">User 3</Link>
-      </li>
-      <li>
-        <Link to="/remote2">Remote App 2</Link>
       </li>
     </ul>
   );
