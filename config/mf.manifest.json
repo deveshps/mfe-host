@@ -3,16 +3,16 @@
     "scope": "remote1",
     "entryUrl": "/remoteEntry.js",
     "serverEntryUrl": "/server/remoteEntry.js",
-    "localOrigin": "http://localhost:3001",
-    "remoteOrigin": "http://3.6.24.181:3001",
+    "localOrigin": "http://localhost:5001",
+    "remoteOrigin": "http://13.126.129.245:5001",
     "locallyHosted": true
   },
   "remote2": {
     "scope": "remote2",
     "entryUrl": "/remoteEntry.js",
     "serverEntryUrl": "/server/remoteEntry.js",
-    "localOrigin": "http://localhost:3002",
-    "remoteOrigin": "http://3.6.24.181:3002",
+    "localOrigin": "http://localhost:5002",
+    "remoteOrigin": "http://13.126.129.245:5002",
     "locallyHosted": true
   }
 }
