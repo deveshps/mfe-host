@@ -4,7 +4,7 @@
   "description": "My App",
   "main": "index.js",
   "scripts": {
-    "dev": "DEV_SERVER=true webpack-dev-server --hot --port 3000 --config config/webpack.client.js",
+    "dev": "DEV_SERVER=true webpack-dev-server --hot --port 5000 --config config/webpack.client.js",
     "build": "npm run clean && npm run build:client && npm run build:server",
     "build:pre": "mkdir -p node_modules/@types_mfe/types",
     "build:client": "npm run build:pre && webpack --progress --config config/webpack.client.js",
