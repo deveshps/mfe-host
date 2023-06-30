@@ -19,6 +19,9 @@ function Header() {
       <li>
         <Link to="/remote2">Remote App 2</Link>
       </li>
+      <li>
+        <Link to="/remote3">Remote App 3</Link>
+      </li>
     </ul>
   );
 }
