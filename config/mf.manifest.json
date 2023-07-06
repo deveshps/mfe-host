@@ -1,26 +1,10 @@
 {
-  "remote1": {
-    "scope": "remote1",
+  "login_mfe": {
+    "scope": "login_mfe",
     "entryUrl": "/remoteEntry.js",
     "serverEntryUrl": "/server/remoteEntry.js",
-    "localOrigin": "http://localhost:5001",
-    "remoteOrigin": "http://13.126.129.245:5001",
-    "locallyHosted": true
-  },
-  "remote2": {
-    "scope": "remote2",
-    "entryUrl": "/remoteEntry.js",
-    "serverEntryUrl": "/server/remoteEntry.js",
-    "localOrigin": "http://localhost:5002",
-    "remoteOrigin": "http://13.126.129.245:5002",
-    "locallyHosted": true
-  },
-  "remote3": {
-    "scope": "remote3",
-    "entryUrl": "/remoteEntry.js",
-    "serverEntryUrl": "/server/remoteEntry.js",
-    "localOrigin": "http://localhost:5003",
-    "remoteOrigin": "http://13.126.129.245:5003",
+    "localOrigin": "http://localhost:3001",
+    "remoteOrigin": "http://13.126.129.245:3001",
     "locallyHosted": true
   }
 }
