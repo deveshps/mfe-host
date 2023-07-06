@@ -1,7 +1,7 @@
 {
   "name": "tcg-mfe-host-boilerplate",
   "version": "0.1.1",
-  "description": "My App",
+  "description": "MFe host boiler plate ",
   "main": "index.js",
   "bin": "./bin/cli.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "hist": "git log --oneline | grep -i",
     "follow": "git log --follow --oneline"
   },
-  "author": "Abhishek Raj <abhishekr@dewsolutions.in>",
+  "author": "Devesh Pal Singh <deveshps@dewsolutions.in>",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
