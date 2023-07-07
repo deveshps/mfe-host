@@ -14,17 +14,17 @@ const runCommand = (command) => {
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/deveshps/mfe-host.git ${repoName}`;
-const gitCheckoutCommandForMfeTwo = `git clone --depth 1 https://github.com/deveshps/mfe-login.git ${repoName}`;
+// const gitCheckoutCommandForMfeTwo = `git clone --depth 1 https://github.com/deveshps/mfe-login.git ${repoName}`;
 
 const installDepsCommand = `cd ${repoName} && npm install`;
 
 
 console.log("Cloning the repository with name ",repoName);
 const checkOut = runCommand(gitCheckoutCommand);
-const checkOutForMfeTwo = runCommand(gitCheckoutCommandForMfeTwo)
+// const checkOutForMfeTwo = runCommand(gitCheckoutCommandForMfeTwo)
 
 if(!checkOut) process.exit(1); // (code : -1)
-if(!checkOutForMfeTwo) process.exit(1)
+// if(!checkOutForMfeTwo) process.exit(1)
 
 console.log("Installing dependencies for ",repoName);
 
