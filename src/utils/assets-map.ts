@@ -26,6 +26,6 @@ export const assetsMap = {
 
 export const assetsMapOnServer = {
   ...assetsMapJson,
-  ...getAssetMapOnServer(remote1AssetsMap, 'remote1'),
+  ...getAssetMapOnServer(remote1AssetsMap, 'login_mfe'),
   // ...getAssetMapOnServer(remote2AssetsMap, 'remote2'),
 };
