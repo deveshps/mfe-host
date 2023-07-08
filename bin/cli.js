@@ -12,7 +12,7 @@ const runCommand = (command) => {
     return true
 }
 
-const repoName = process.argv[2];
+const repoName = process?.argv[2] || "mfe-host";
 const secondRepoName = process?.argv[3] || "mfe-login";
 
 
