@@ -28,7 +28,7 @@ function Html({ children, assetsMap, styleSheetData, title }: HtmlProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/logo.a0185b04.svg" />
         <title>{title || 'My App'}</title>
         <meta name="description" content="my app" />
 
@@ -41,7 +41,7 @@ function Html({ children, assetsMap, styleSheetData, title }: HtmlProps) {
           </style>
         ))}
       </head>
-      <body>
+      <body style={{margin:0}}>
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<b>Enable JavaScript to run this app.</b>`
