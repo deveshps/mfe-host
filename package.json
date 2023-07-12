@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "MFe host boiler plate ",
   "main": "index.js",
-  "bin": "./bin/cli.js",
   "scripts": {
     "dev": "DEV_SERVER=true webpack-dev-server --hot --port 3000 --config config/webpack.client.js",
     "build": "npm run clean && npm run build:client && npm run build:server",
