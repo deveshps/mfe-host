@@ -1,6 +1,6 @@
 {
   "name": "tcg-mfe-boilerplates",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "MFe host boiler plate ",
   "main": "index.js",
   "bin": "./bin/cli.js",

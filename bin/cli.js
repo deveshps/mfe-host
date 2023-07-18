@@ -15,31 +15,40 @@ const runCommand = (command) => {
 const repoName = process?.argv[2] || "mfe-host";
 const secondRepoName = process?.argv[3] || "mfe-login";
 
+// for host mfe
 
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/deveshps/mfe-host.git ${repoName}`;
-const gitCheckoutCommandForMfeTwo = `git clone --depth 1 https://github.com/deveshps/mfe-login.git ${secondRepoName}`;
 
 const installDepsCommand = `cd ${repoName} && npm install`;
 
-const installDepsCommand2 = `cd ${secondRepoName} && npm install`;
+console.log("Cloning the repository with name ",repoName);
 
-
-
-console.log("Cloning the repository with name ",repoName,secondRepoName);
 const checkOut = runCommand(gitCheckoutCommand);
-const checkOutForMfeTwo = runCommand(gitCheckoutCommandForMfeTwo)
-
-if(!checkOut || !checkOutForMfeTwo) process.exit(1); // (code : -1)
-
-console.log("Installing dependencies for ",repoName,secondRepoName);
 
 const installedDeps = runCommand(installDepsCommand);
-const installedDeps2 = runCommand(installDepsCommand2);
+
+console.log("Installing dependencies for ",repoName);
 
 console.log(`installedDeps for ${repoName}`,installedDeps)
 
+// for login mfe 
+
+const gitCheckoutCommandForMfeTwo = `git clone --depth 1 https://github.com/deveshps/mfe-login.git ${secondRepoName}`;
+
+const installDepsCommand2 = `cd ${secondRepoName} && npm install`;
+
+console.log("Cloning the repository with name ",secondRepoName);
+
+const checkOutForMfeTwo = runCommand(gitCheckoutCommandForMfeTwo)
+
+const installedDeps2 = runCommand(installDepsCommand2);
+
+console.log("Installing dependencies for ",secondRepoName);
+
 console.log(`installedDeps for ${secondRepoName}`,installedDeps2)
 
+
+if(!checkOut || !checkOutForMfeTwo) process.exit(1); // (code : -1)
 
 
 if(!installDepsCommand || !installDepsCommand2) process.exit(1) // (code : -1)
