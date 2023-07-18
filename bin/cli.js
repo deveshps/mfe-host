@@ -36,7 +36,10 @@ console.log("Installing dependencies for ",repoName,secondRepoName);
 const installedDeps = runCommand(installDepsCommand);
 const installedDeps2 = runCommand(installDepsCommand2);
 
-console.log("installedDeps ",installedDeps)
+console.log(`installedDeps for ${repoName}`,installedDeps)
+
+console.log(`installedDeps for ${secondRepoName}`,installedDeps2)
+
 
 
 if(!installDepsCommand || !installDepsCommand2) process.exit(1) // (code : -1)
